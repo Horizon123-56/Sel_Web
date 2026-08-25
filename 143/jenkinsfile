@@ -10,17 +10,6 @@ pipeline {
             }
         }
 
-        stage('Check Workspace') {
-            steps {
-                bat 'echo Current directory:'
-                bat 'cd'
-                bat 'echo Files:'
-                bat 'dir'
-                bat 'echo Searching for pom.xml:'
-                bat 'dir /s /b pom.xml'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Building project'
