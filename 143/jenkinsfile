@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building project'
-                bat 'mvn -f "143/pom.xml" clean compile'
+                bat 'mvn -f 'pom.xml' clean compile'
             }
         }
 
